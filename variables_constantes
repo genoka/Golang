@@ -1,0 +1,25 @@
+type compte struct {
+ code_banque string
+ numero uint
+ rib   double
+ libellebanque sting 
+ solde_initial double
+ credit   uint
+ debit uint
+ operation bool
+ date_operation string
+ }
+ 
+ type arme struct {
+  categorie string
+  long float
+  epaisseur float
+  marque string
+  autorisation bool
+  }
+  
+  const (
+   pi := 3.14
+   qe := 1.614E-27 
+   )
+   
