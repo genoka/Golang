@@ -1,0 +1,11 @@
+
+func factorielle( n uint)
+{
+ if n==0 
+   return 1
+  else 
+    return factorielle(n-1)
+}
+func pgcd (a uint n b uint )
+{
+}
