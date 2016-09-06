@@ -34,3 +34,5 @@ type sudoku struct {
  func solutions()
  {
  }
+func main() {
+}
