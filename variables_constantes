@@ -27,3 +27,6 @@ type compte struct {
    qe := 1.614E-27 
    )
    
+   func main() {
+}
+
