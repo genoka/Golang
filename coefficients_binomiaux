@@ -1,6 +1,6 @@
 package main
 
-import("fmt")
+import "fmt"
 
 func coefficient_binomiaux(k uint64, n uint64) uint64
  {
