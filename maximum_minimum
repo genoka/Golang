@@ -1,4 +1,7 @@
 //maximum et minimum en go
+package main
+
+import "fmt"
 
 func Maximum( a int64,b int64) (max int64, bool )
 {
