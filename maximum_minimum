@@ -28,3 +28,6 @@ if a>b {
     }
   }
 }
+
+func main() {
+}
