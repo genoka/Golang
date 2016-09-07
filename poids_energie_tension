@@ -1,0 +1,29 @@
+package main
+
+import "fmt"
+
+const (
+g float32 
+)
+func poids_gravitationnel( m uint64)(p uint64)
+{
+ g:= 9.04E-8
+ return m*g
+}
+
+func energie_meacanique(EC double, EP double )(EM double)
+{
+ return EC+EP
+}
+
+func tension_volt(r uint, i uint ) ( t uint)
+{
+
+if r==0 || i==0
+ {
+  return 0
+ }else
+ {
+   return r*i
+ }
+}
