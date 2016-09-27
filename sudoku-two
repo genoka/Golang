@@ -1,0 +1,185 @@
+type sudoku struct{
+
+  nl, nc := 9
+ L [9]int := {1,2,3,4,5,6,7,8,9}
+  C [9]int := {1,2,3,4,5,6,7,8,9}
+  vide int :=0
+  tab [9][9]int
+  n [9]int :={1,2,3,4,5,6,7,8,9}
+  nmin,nmax int
+  un,deux,trois,quatre,cinq,six,sept,huit,neuf int:=0
+  
+  }
+  
+  type etat struct {
+  
+    nmin int
+    nmax int
+    etat func()
+    
+    }
+    
+  func probabilite_max(ninit int, n int)
+   {
+   
+      if ninit == 9 
+       {
+         return 0
+         }else{
+            return nE2 -ninit 
+           }
+   }
+   func controlEtat(E Etat) (bool)
+    {
+       if Etat{E.nmin}>=27 || Etat{E.nmax}<=54 
+        {
+          return true
+         }else
+          { 
+          return false
+          }
+    
+    }
+    
+    func get_case(il int, ic int )
+      {
+       return Sudoku { S.tab[il][ic] }
+      }
+    func get_sudoku()
+     {
+        var s sudoku
+        s:=get_cases()
+        for i:=0;i<len(sudoku{s.nl});i++
+          {
+             for j!=0;j<len(sudoku{s.nc});j++
+               {
+                  fmt.printf("%d",sudoku{S.tab[i][j]})
+               }
+          }
+      
+     }
+    func get_ligne(indice int,s sudoku) (int, [9]int)
+     {
+       remplir_ligne(Sudoku{S.nl})
+       return { Sudoku{S.nl}, Sudoku{S.L} }
+     }
+     
+     func get_colonne(indice int, s sudoku)(int, [9]int)
+      {
+         remplir_ligne(Sudoku{S.nl})
+       return { Sudoku{S.nl}, Sudoku{S.L} }
+      }
+      
+      func controle(t [9]int, n int)
+       {
+       
+        for i:=0;i<len(t);i++
+          {
+            if t[i]==0
+             {
+             return false
+             }else{
+                    if t[i]==n
+                      {
+                        return true
+                      }else{
+                        return false
+                      }
+                 }
+          }
+       }
+       
+      func get_cases(indice int, s sudoku)
+       {
+          case [9][9]int
+          if indice ==1
+           {
+               for i:=0;i<3;i++
+                {
+                   for j:=0;j<3;i++
+                    {
+                            case[i][j] := sudoku {S.tab[i][j]}
+                    }
+                }
+           }
+           if indice ==2
+           {
+               for i:=3;i<6;i++
+                {
+                   for j:=3;j<6;i++
+                    {
+                            case[i][j] := sudoku {S.tab[i][j]}
+                    }
+                }
+           }
+           if indice ==3
+           {
+               for i:=6;i<9;i++
+                {
+                   for j:=6;j<9;i++
+                    {
+                            case[i][j] := sudoku {S.tab[i][j]}
+                    }
+                }
+           }
+           if indice ==4
+           {
+               for i:=0;i<3;i++
+                {
+                   for j:=0;j<3;i++
+                    {
+                            case[i][j] := sudoku {S.tab[i][j]}
+                    }
+                }
+           }
+           if indice ==5
+           {
+               for i:=0;i<3;i++
+                {
+                   for j:=0;j<3;i++
+                    {
+                            case[i][j] := sudoku {S.tab[i][j]}
+                    }
+                }
+           }
+           if indice ==6
+           {
+               for i:=0;i<3;i++
+                {
+                   for j:=0;j<3;i++
+                    {
+                            case[i][j] := sudoku {S.tab[i][j]}
+                    }
+                }
+           }
+           if indice ==7
+           {
+               for i:=0;i<3;i++
+                {
+                   for j:=0;j<3;i++
+                    {
+                            case[i][j] := sudoku {S.tab[i][j]}
+                    }
+                }
+           }
+           if indice ==8
+           {
+               for i:=0;i<3;i++
+                {
+                   for j:=0;j<3;i++
+                    {
+                            case[i][j] := sudoku {S.tab[i][j]}
+                    }
+                }
+           }
+           if indice ==9
+           {
+               for i:=0;i<3;i++
+                {
+                   for j:=0;j<3;i++
+                    {
+                            case[i][j] := sudoku {S.tab[i][j]}
+                    }
+                }
+           }
+       }
