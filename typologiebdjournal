@@ -1,0 +1,45 @@
+ type AnnoncesLegales struct {
+  titre string
+  telep1 uint32
+  cell2 uint
+  cell3 uint
+  fax uint
+  email string
+}
+ type AO_AvisReport struct {
+  titre string
+  titreAO string
+  EnteteAo string
+  texteAR string
+  numAR uint
+  }
+  type TV struct {
+   teleTV string
+   logo uintptr
+   }
+   type ProgTV struct {
+    heure uint
+    progtoheure string 
+    }
+    
+    type AO1 struct {
+      entetdetaillee string
+      titre AODetaille string
+      AOAvisOuvert bool
+    }
+     
+    type AO2 struct {
+      numAO string
+      titreAO string
+      paysAO string
+      titredirectAO string
+      titredirectAO string
+      titreminiAO  string
+      titreservAO string
+      titreAO2 string
+      titrepresAO string
+      piecejointesAO uintptr
+      contactAO string
+      montantAO float64 
+      etatAO bool
+      }
