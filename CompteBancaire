@@ -1,0 +1,51 @@
+type compte struct {
+   numcompte, soldeinit int
+   nomBanque, adresseB char[50]
+   rib, codebanque, solde int
+   nom, prenom,adresse, tel String
+   initialisation func()
+   }
+  
+  getsolde func( c compte) int
+   {
+     return compte { c.solde}
+   }
+   debiter func(c compte, montant int)
+    {
+      if compte{c.solde} . = montant 
+      {
+        compte{c.solde} := compte {c.solde} - montant
+      }else{
+          fmt.printf('opération impossible - solde insuffisant')
+      }
+    }
+   crediter func ( c compte , montant int )
+     {
+       if ( montant sup 0 )
+         { 
+             compte { c.solde} := compte { c.solde} + montant 
+          }
+     }
+     
+     type compteEpargne Struct {
+          cpte Compte
+          taux interet uint64
+          initialisation func() ( bool, error)
+          gettauxinteret func() (uint 64, error)
+          settauxintert func () ( taux uint64)
+          
+     }
+     
+     initialisation ( ce CompteEpargne ) func (  p byte, e error, ok bool )
+      {
+        exported var e compteEpargne = new  (compteEpargne );
+        ce1 := make (compteEpargne)
+        CompteEpargne{ce1.cpte} := " Compte de monsieur toto"
+        CompteEpargne{ce1.tauxinteret} = 18
+        if e!= nil 
+         {
+             return 1, os.EINVAL, True
+          }else{
+                return -1, os.EINVAL, False
+          }
+      }
