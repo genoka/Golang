@@ -23,10 +23,28 @@ type compte struct {
   }
   
   const (
-   pi := 3.14
-   qe := 1.614E-27 
+   pi  float64 = 3.14
+   qe  float64 = 1.614E-27
+   size float64 = 1024
+   eof int8 = -1
    )
    
+   const (
+     Monday  uint8 = iota
+     Tuesday byte = iota
+     Wednesday byte = iota
+     Thursday byte = iota
+     Friday byte = iota
+     Saturday byte =  iota
+     Sunday byte = iota
+   
+)
+   
+   Type NombreCompex struct {
+    reel complex128
+    bimg complex128
+   }
    func main() {
-}
+     var t *nombecomplex =new (NombreComplex)
+   }
 
