@@ -1,0 +1,30 @@
+import ( 
+		"./file"
+		"fmt"
+		"os"
+    ) 
+
+func (file file ) write ( b [] byte) (ret int, err os.error) {
+	if file == nil {
+                  return -1, os.EINVAL        
+         } 
+	r,e := syscall.write(file.fd, b)
+	if e!=0 {
+        	err =os.Errno(e) 
+	}
+	return  int(r), err
+}
+func  (file File ) String () string
+ {
+ 	return file.name
+ }
+func main() {
+	 hello := []byte ("hello, world \n")
+	 file.stdout.Write(hello)
+	f,err := file.Open("/url/fichier",o,o)
+	if f==nil {
+		fmt.printf("",)
+	os.Exit(1)
+         }
+	
+}
