@@ -1,10 +1,17 @@
+
 import ( 
 		"./file"
 		"fmt"
 		"os"
     ) 
-
-func (file file ) write ( b [] byte) (ret int, err os.error) {
+func NewFile ( fd int, name string) *File
+{
+	if fd < 0 {
+	   return nil 
+	    }
+	  return &File{fd,name}
+}
+func (file *file ) write ( b [] byte) (ret int, err os.error) {
 	if file == nil {
                   return -1, os.EINVAL        
          } 
@@ -14,7 +21,7 @@ func (file file ) write ( b [] byte) (ret int, err os.error) {
 	}
 	return  int(r), err
 }
-func  (file File ) String () string
+func  (file *File ) String () string
  {
  	return file.name
  }
